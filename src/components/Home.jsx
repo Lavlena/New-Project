@@ -1,13 +1,14 @@
 const Home = () =>{
     const niceTextStyle = {
-        color: "red",
+        color: "white",
         fontSize: 56
       }
+   
       return (
-        <>
+        <div className="homehome">
           <h1 style={niceTextStyle}>Home</h1>  
-          <p style={{textTransform:'uppercase', color:"#0B6600"}}>Welcome to my page!</p>
-        </>
+          <p style={{textTransform:'uppercase', color:"#fff", fontSize:'2em'}}>Welcome to my page!</p>
+        </div>
       );
 };
 export default Home;

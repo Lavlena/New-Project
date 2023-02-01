@@ -1,3 +1,13 @@
+.header{
+  font-size: 1.5em;
+  display: flex;
+  justify-content: space-between;
+}
+.homehome{
+  height: 400px;
+  background: url("https://cdn-ds.com/blogs-media/sites/369/2021/01/20210120/winter-valentines-4_p.jpg") no-repeat center;
+  background-size: cover;
+}
 p {
   text-align: center;
 }

@@ -8,7 +8,7 @@ import { useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-const LoginForm = () => {
+  const LoginForm = () => {
     const [failedLogIn, setFailedLogIn] = useState(false);
       const [userIsBanned, setUserIsBanned] = useState(false);
         const navigation = useNavigate();
@@ -43,12 +43,12 @@ const LoginForm = () => {
 
 
 
-            const loggedInUser = users.find(item => (item.username === values.username) && (item.password === values.password));
-if (loggedInUser === undefined) {
-    console.log ("undefined");
-} else
+      const loggedInUser = users.find(item => (item.username === values.username) && (item.password === values.password));
+            if (loggedInUser === undefined) {
+                console.log ("undefined");
+            } else
             if(!loggedInUser.isBanned){
-              setLoggedInUser(loggedInUser);
+              setLoggedInUser(users.find(item => item.username===values.username));
               navigation('/');
               console.log("available");
 
