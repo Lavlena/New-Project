@@ -10,23 +10,31 @@ function App() {
     <>
     <header>
       <h1>Hello! Good Mood Off</h1>
-      <nav>
-      <ul>
-        <li>
-          <Link to = "/">Home</Link>
-        </li>
-        <li>
-          <Link to = "/login">Login</Link>
-        </li>
-        <li>
-          <Link to = "/register">Register</Link>
-        </li>
-        <li>
-          <Link to = "/info">Info</Link>
-        </li>
-      </ul>
-      </nav>
-    </header>
+      <div>
+        <div>
+        <Link to = "/">Home</Link>
+        </div>
+        <div>
+        <Link to = "/login">Login</Link>
+        </div>
+        <div>
+        <Link to = "/register">Register</Link>
+        </div>
+        <div>
+        <Link to = "/info">Info</Link>
+        </div>
+        {/* <div>
+          <span>{item.username}</span>
+          <img src={item.avatar} alt="user avatar" style={{width:'30px', height:'auto'}}/>
+          
+          <button onClick={() => banOrUnbanUser(data.id)}>
+          {data.isBanned ? 'UnBan' : 'Ban'}
+        </button>
+        </div> */}
+      </div>
+
+
+     </header>
     <hr/>
       
       <Routes>
